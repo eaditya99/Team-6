@@ -20,12 +20,12 @@ isbn = input("Masukkan ISBN : ")
 print("\n")
 
 
-select_isbn_query = f"SELECT * FROM katalog where isbn = {isbn}"
+select_isbn_query = f"SELECT * FROM katalog where isbn = {isbn}" #format = list. per row data type-nya tuple
 
 cursor.execute(select_isbn_query)
 
 isbn_result = cursor.fetchall()
-isbn, title, author, publisher, year, availability = zip(*isbn_result)
+isbn, title, author, publisher, year, availability = zip(*isbn_result) 
 
 format_isbn_result = f"ISBN\t\t: {str(isbn[0])}\nTitle\t\t: {str(title[0])}\nAuthor\t\t: {str(author[0])}\nPublisher\t: {str(publisher[0])}\nYear\t\t: {str(year[0])}\nAvailability\t: {str(availability[0])}\n"
 print(format_isbn_result)
