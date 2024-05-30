@@ -36,7 +36,7 @@ SELECT
 FROM
     Katalog;
     
-    
+COMMIT;    
 
 /* 
 FUNGSI DELETE: 
