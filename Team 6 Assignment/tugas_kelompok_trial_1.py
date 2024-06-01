@@ -4,7 +4,7 @@ db = mysql.connector.connect(
     host='127.0.0.1',  # Replace with your host, e.g., '127.0.0.1'
     port= '3306',       
     user='root',     # Replace with your MySQL username
-    password='Cc10040014!!', # Replace with your MySQL password!!!
+    password='password', # Replace with your MySQL password!!!
     database='perpustakaan'  # Replace with the name of your database
 )
 
